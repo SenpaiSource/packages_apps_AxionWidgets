@@ -27,6 +27,16 @@
     <style name="SecondaryTextInfoStyle" parent="QuickLookBase">
         <item name="android:textSize">@dimen/secondary_text_size</item>
     </style>
+
+    <style name="QuickLookPreviewDateTextStyle" parent="DateTextStyle">
+        <item name="android:textColor">@color/quicklook_preview_primary_color</item>
+        <item name="android:shadowColor">@android:color/transparent</item>
+    </style>
+
+    <style name="QuickLookPreviewPrimaryTextInfoStyle" parent="PrimaryTextInfoStyle">
+        <item name="android:textColor">@color/quicklook_preview_secondary_color</item>
+        <item name="android:shadowColor">@android:color/transparent</item>
+    </style>
     
     <style name="BatteryLevelTextStyle" parent="">
         <item name="android:textSize">@dimen/battery_text_size</item>

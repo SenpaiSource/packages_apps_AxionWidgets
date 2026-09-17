@@ -56,6 +56,7 @@ constructor(
 
         val merged =
             listOfNotNull(data.primaryText, data.secondaryText)
+                .map { it.trim() }
                 .filter { it.isNotEmpty() }
                 .joinToString(" ")
                 .ifEmpty { null }
@@ -76,13 +77,13 @@ constructor(
             when (qlData) {
                 is QuickLookData.CalendarEvent -> {
                     val title =
-                        qlData.title
-                            ?: context.getString(R.string.quick_look_widget_calendar_no_title)
+                        qlData.title.trim()
+                            .ifEmpty { context.getString(R.string.quick_look_widget_calendar_no_title) }
                     val b =
                         ContextCompat.getDrawable(context, R.drawable.ic_calendar_event)?.toBitmap()
                     DisplayData(
                         dateText = title,
-                        secondaryText = qlData.desc,
+                        secondaryText = qlData.desc.trim().ifEmpty { null },
                         iconViewId = R.id.media_icon,
                         iconBitmap = b,
                     )
@@ -101,8 +102,8 @@ constructor(
                             ?: ContextCompat.getDrawable(context, R.drawable.ic_music_note)
                                 ?.toBitmap()
                     DisplayData(
-                        dateText = qlData.title,
-                        secondaryText = qlData.artist,
+                        dateText = qlData.title?.trim()?.ifEmpty { null },
+                        secondaryText = qlData.artist?.trim()?.ifEmpty { null },
                         iconViewId = R.id.media_icon,
                         iconBitmap = b,
                     )
