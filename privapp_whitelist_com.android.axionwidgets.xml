@@ -10,5 +10,9 @@
         <permission name="android.permission.SCHEDULE_EXACT_ALARM" />
         <permission name="android.permission.READ_CALENDAR" />
         <permission name="android.permission.ACTIVITY_RECOGNITION" />
+        <permission name="android.permission.BLUETOOTH_CONNECT" />
+        <permission name="android.permission.CAMERA" />
+        <permission name="android.permission.CHANGE_WIFI_STATE" />
+        <permission name="android.permission.WRITE_SETTINGS" />
     </privapp-permissions>
 </permissions>

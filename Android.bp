@@ -1,3 +1,8 @@
+//
+// Copyright (C) 2024-2026 The Android Open Source Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
 soong_namespace {
 }
 
@@ -7,7 +12,12 @@ android_app {
 
     srcs: [
         "src/**/*.kt",
+        "src/**/*.java",
+        "aidl/**/*.aidl",
     ],
+    aidl: {
+        local_include_dirs: ["aidl"],
+    },
     resource_dirs: ["res"],
 
     certificate: "platform",
@@ -24,7 +34,6 @@ android_app {
         "androidx.core_core-ktx",
         "androidx.appcompat_appcompat",
         "com.google.android.material_material",
-        "androidx.activity_activity-compose",
         "androidx.compose.animation_animation-core",
         "androidx.compose.animation_animation-graphics",
         "androidx.compose.foundation_foundation",
@@ -37,9 +46,6 @@ android_app {
         "kotlinx-coroutines-core",
         "gson-prebuilt-jar-2.9.1",
         "hilt_android",
-        "ax_compose",
-        "ax_platform_hooks",
-        "axquicklook-client",
     ],
 
     kotlincflags: [
@@ -59,30 +65,6 @@ prebuilt_etc {
     sub_dir: "permissions",
     src: "privapp_whitelist_com.android.axionwidgets.xml",
     filename_from_src: true,
-}
-
-android_app_import {
-    name: "NothingCardService",
-    owner: "nothing",
-    apk: "proprietary/system_ext/priv-app/NothingCardService/NothingCardService.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
-}
-
-android_app_import {
-    name: "NothingCardLab",
-    owner: "nothing",
-    apk: "proprietary/system_ext/priv-app/NothingCardLab/NothingCardLab.apk",
-    certificate: "platform",
-    dex_preopt: {
-        enabled: false,
-    },
-    privileged: true,
-    system_ext_specific: true,
 }
 
 android_app_import {

@@ -12,7 +12,7 @@
         android:id="@+id/date_day_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="nothingdot57"
+        android:fontFamily="@font/nothingdot57"
         android:includeFontPadding="false"
         android:textColor="@color/battery_device_primary_color"
         android:textSize="56sp" />
@@ -21,7 +21,7 @@
         android:id="@+id/date_day_of_week"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="nothingdot57"
+        android:fontFamily="@font/nothingdot57"
         android:includeFontPadding="false"
         android:textColor="@color/battery_device_primary_color"
         android:textSize="16sp" />
@@ -31,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:alpha="0.5"
-        android:fontFamily="nothingdot57"
+        android:fontFamily="@font/nothingdot57"
         android:includeFontPadding="false"
         android:layout_marginTop="2dp"
         android:textColor="@color/battery_device_primary_color"
@@ -51,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ellipsize="end"
-        android:fontFamily="nothingdot57"
+        android:fontFamily="@font/nothingdot57"
         android:maxLines="1"
         android:textColor="@color/battery_device_primary_color"
         android:textSize="13sp" />
@@ -61,7 +61,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:alpha="0.5"
-        android:fontFamily="nothingdot57"
+        android:fontFamily="@font/nothingdot57"
         android:layout_marginTop="2dp"
         android:textColor="@color/battery_device_primary_color"
         android:textSize="11sp" />

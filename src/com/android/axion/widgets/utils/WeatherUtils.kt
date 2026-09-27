@@ -16,11 +16,29 @@ package com.android.axion.widgets.utils
 
 import android.content.Context
 import android.graphics.drawable.Drawable
-import com.android.internal.util.android.OmniJawsClient
 
 object WeatherUtils {
 
+    private val CANDIDATE_CLASSES = listOf(
+        "com.android.internal.util.android.OmniJawsClient",
+        "com.android.internal.util.omni.OmniJawsClient"
+    )
+
     fun getWeatherIcon(context: Context, conditionCode: Int): Drawable? {
-        return OmniJawsClient.get().getWeatherConditionImage(context, conditionCode)
+        for (className in CANDIDATE_CLASSES) {
+            val result = runCatching {
+                val clazz = Class.forName(className)
+                val getMethod = clazz.getMethod("get")
+                val instance = getMethod.invoke(null)
+                val getImageMethod = clazz.getMethod(
+                    "getWeatherConditionImage",
+                    Context::class.java,
+                    Int::class.javaPrimitiveType
+                )
+                getImageMethod.invoke(instance, context, conditionCode) as? Drawable
+            }.getOrNull()
+            if (result != null) return result
+        }
+        return null
     }
 }

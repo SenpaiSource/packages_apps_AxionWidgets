@@ -30,7 +30,7 @@
             android:id="@+id/pedometer_steps"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="nothingdot57"
+            android:fontFamily="@font/nothingdot57"
             android:includeFontPadding="false"
             android:textColor="@color/battery_device_primary_color"
             android:textSize="28sp" />
@@ -39,7 +39,7 @@
             android:id="@+id/pedometer_steps_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="nothingdot57"
+            android:fontFamily="@font/nothingdot57"
             android:text="steps"
             android:textColor="@color/battery_device_primary_color"
             android:textSize="11sp"
@@ -50,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="1dp"
-            android:fontFamily="nothingdot57"
+            android:fontFamily="@font/nothingdot57"
             android:alpha="0.4"
             android:textColor="@color/battery_device_primary_color"
             android:textSize="10sp" />

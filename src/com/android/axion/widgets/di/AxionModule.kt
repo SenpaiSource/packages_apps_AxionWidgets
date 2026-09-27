@@ -53,8 +53,10 @@ object AxionModule {
 
     @Provides
     @Singleton
-    fun provideBatteryStatusProvider(bridge: AxPlatformBridge): BatteryStatusProvider =
-        BatteryStatusProvider(bridge)
+    fun provideBatteryStatusProvider(
+        @ApplicationContext context: Context,
+        bridge: AxPlatformBridge,
+    ): BatteryStatusProvider = BatteryStatusProvider(context, bridge)
 
     @Provides
     @Singleton
