@@ -1,0 +1,83 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tile_view_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/pill_widget_padding_horizontal"
+    android:paddingVertical="@dimen/pill_widget_padding_vertical">
+    <View
+        android:id="@+id/tile_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_widget_tile"
+        android:layout_gravity="start|center_vertical"
+        android:clickable="false"
+        android:focusable="false" />
+    <View
+        android:id="@+id/overlay_active_tile_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@drawable/bg_widget_tile"
+        android:backgroundTint="@color/tile_active"
+        android:layout_gravity="start|center_vertical"
+        android:clickable="false"
+        android:focusable="false" />
+    <LinearLayout
+        android:id="@+id/tile_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start|center_vertical"
+        android:orientation="horizontal"
+        android:gravity="start|center_vertical"
+        android:paddingStart="@dimen/widget_pill_padding_start">
+        <ImageView
+            android:id="@+id/tile_view"
+            android:layout_width="@dimen/widget_pill_icon_size"
+            android:layout_height="@dimen/widget_pill_icon_size"
+            android:scaleType="centerInside"
+            android:tint="@color/battery_device_primary_color"
+            android:src="@drawable/ic_unknown"
+            android:clickable="false"
+            android:focusable="false" />
+        <ImageView
+            android:id="@+id/tile_active_view"
+            android:layout_width="@dimen/widget_pill_icon_size"
+            android:layout_height="@dimen/widget_pill_icon_size"
+            android:scaleType="centerInside"
+            android:tint="@color/device_primary_color_inverse"
+            android:visibility="gone"
+            android:clickable="false"
+            android:focusable="false" />
+        <FrameLayout
+            android:id="@+id/tile_label_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/widget_label_frame_margin_start">
+            <TextView
+                android:id="@+id/tile_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading..."
+                android:paddingEnd="@dimen/widget_pill_label_padding_end"
+                android:textSize="@dimen/pill_tile_text_size"
+                android:textColor="@color/battery_device_primary_color"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:clickable="false"
+                android:focusable="false" />
+            <TextView
+                android:id="@+id/tile_label_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading..."
+                android:paddingEnd="@dimen/widget_pill_label_padding_end"
+                android:textSize="@dimen/pill_tile_text_size"
+                android:textColor="@color/device_primary_color_inverse"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:clickable="false"
+                android:focusable="false" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="date_text_size">24dp</dimen>
+    <dimen name="secondary_text_size">18dp</dimen>
+    <dimen name="quicklook_icon_size">20dp</dimen>
+    <dimen name="secondary_text_margin_end">4dp</dimen>
+    <dimen name="media_icon_margin_end">6dp</dimen>
+    <dimen name="secondary_container_margin_top">4dp</dimen>
+    <dimen name="photo_frame_width">10dp</dimen>
+    <dimen name="pill_widget_height">68dp</dimen>
+    <dimen name="pill_widget_width">171dp</dimen>
+    <dimen name="widget_pill_padding_start">22dp</dimen>
+    <dimen name="widget_pill_icon_size">20dp</dimen>
+    <dimen name="widget_label_frame_margin_start">12dp</dimen>
+    <dimen name="widget_pill_label_padding_end">24dp</dimen>
+    <dimen name="pill_tile_text_size">14dp</dimen>
+    <dimen name="pill_widget_padding_vertical">3dp</dimen>
+    <dimen name="pill_widget_padding_horizontal">6dp</dimen>
+    <dimen name="tile_widget_padding">4dp</dimen>
+    <dimen name="battery_margin">16dp</dimen>
+    <dimen name="battery_text_size">30dp</dimen>
+    <dimen name="battery_bg_arc_size">72dp</dimen>
+    <dimen name="battery_charge_y">6dp</dimen>
+    <dimen name="card_padding_vertical">3dp</dimen>
+    <dimen name="card_padding_horizontal">9dp</dimen>
+    <dimen name="card_radius">16dp</dimen>
+    <dimen name="quicklook_info_margin_horizontal">6dp</dimen>
+    <dimen name="quicklook_secondary_info_margin_horizontal">3dp</dimen>
+</resources>

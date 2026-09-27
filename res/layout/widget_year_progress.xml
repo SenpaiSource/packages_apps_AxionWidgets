@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/year_progress_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_widget_card"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/year_progress_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:tint="@color/battery_device_primary_color"
+            android:tintMode="src_in" />
+
+        <ImageView
+            android:id="@+id/year_progress_preview_placeholder"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_calendar_event"
+            android:tint="@color/battery_device_primary_color"
+            android:alpha="0.2" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/year_progress_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="nothingdot"
+        android:text="YEAR PROGRESS"
+        android:textColor="@color/battery_device_primary_color"
+        android:textSize="10sp"
+        android:alpha="0.6"
+        android:gravity="start" />
+
+</LinearLayout>

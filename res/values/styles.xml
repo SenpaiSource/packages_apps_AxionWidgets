@@ -1,0 +1,46 @@
+<resources>
+    <style name="QuickLookBase">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">4</item>
+    </style>
+
+    <style name="DateTextStyle" parent="QuickLookBase">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/date_text_size</item>
+    </style>
+
+    <style name="PrimaryTextInfoStyle" parent="QuickLookBase">
+        <item name="android:textSize">@dimen/secondary_text_size</item>
+    </style>
+
+    <style name="IconStyle">
+        <item name="android:layout_width">@dimen/quicklook_icon_size</item>
+        <item name="android:layout_height">@dimen/quicklook_icon_size</item>
+    </style>
+
+    <style name="SecondaryTextInfoStyle" parent="QuickLookBase">
+        <item name="android:textSize">@dimen/secondary_text_size</item>
+    </style>
+
+    <style name="QuickLookPreviewDateTextStyle" parent="DateTextStyle">
+        <item name="android:textColor">@color/quicklook_preview_primary_color</item>
+        <item name="android:shadowColor">@android:color/transparent</item>
+    </style>
+
+    <style name="QuickLookPreviewPrimaryTextInfoStyle" parent="PrimaryTextInfoStyle">
+        <item name="android:textColor">@color/quicklook_preview_secondary_color</item>
+        <item name="android:shadowColor">@android:color/transparent</item>
+    </style>
+    
+    <style name="BatteryLevelTextStyle" parent="">
+        <item name="android:textSize">@dimen/battery_text_size</item>
+        <item name="lineHeight">@dimen/battery_text_size</item>
+        <item name="android:textColor">@color/battery_device_primary_color</item>
+    </style>
+</resources>
