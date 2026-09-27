@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Component Overrides for Nothing Widgets:
+    Disables all Nothing Glyph Matrix Toys and background Glyph services
+    since non-Nothing devices lack Glyph LED hardware.
+-->
+<config>
+    <component-override package="com.nothing.hearthstone">
+        <!-- Glyph Matrix Clock Toy -->
+        <component class="com.nothing.hearthstone.clock.glyph.GlyphMatrixClockService" enabled="false" />
+
+        <!-- Glyph Matrix Bottle Spin Toy -->
+        <component class="com.nothing.hearthstone.bottle.glyph.GlyphMatrixBottleService" enabled="false" />
+
+        <!-- Glyph Matrix Battery Level Toy -->
+        <component class="com.nothing.hearthstone.battery.glyph.GlyphMatrixBatteryService" enabled="false" />
+
+        <!-- Glyph Matrix Rock Paper Scissors Toy -->
+        <component class="com.nothing.hearthstone.fingerguess.glyph.GlyphMatrixFingerGussService" enabled="false" />
+
+        <!-- Glyph Matrix Solar Path Toy -->
+        <component class="com.nothing.hearthstone.clock.glyph.GlyphMatrixSolarService" enabled="false" />
+
+        <!-- Glyph Matrix Stopwatch Toy -->
+        <component class="com.nothing.hearthstone.clock.glyph.GlyphMatrixStopwatchService" enabled="false" />
+
+        <!-- Breath Glyph Service -->
+        <component class="com.nothing.hearthstone.breath.service.GlyphMatrixBreathService" enabled="false" />
+    </component-override>
+</config>

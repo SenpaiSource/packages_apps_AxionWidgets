@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2024 Nothing Technology Limited
+ * Licensed under the Apache License, Version 2.0
+-->
+<permissions>
+    <feature name="com.nothing.feature" />
+    <feature name="com.nothing.feature.OS.V2_0" />
+    <feature name="com.nothing.feature.OS.V2_5" />
+    <feature name="com.nothing.feature.ntwidget.V1_2" />
+</permissions>
