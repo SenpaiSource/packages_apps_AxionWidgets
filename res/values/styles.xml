@@ -13,10 +13,12 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/date_text_size</item>
+        <item name="android:fontFamily">nothingdot57</item>
     </style>
 
     <style name="PrimaryTextInfoStyle" parent="QuickLookBase">
         <item name="android:textSize">@dimen/secondary_text_size</item>
+        <item name="android:fontFamily">nothingdot57</item>
     </style>
 
     <style name="IconStyle">
@@ -26,6 +28,7 @@
 
     <style name="SecondaryTextInfoStyle" parent="QuickLookBase">
         <item name="android:textSize">@dimen/secondary_text_size</item>
+        <item name="android:fontFamily">nothingdot57</item>
     </style>
 
     <style name="QuickLookPreviewDateTextStyle" parent="DateTextStyle">
@@ -40,7 +43,8 @@
     
     <style name="BatteryLevelTextStyle" parent="">
         <item name="android:textSize">@dimen/battery_text_size</item>
-        <item name="lineHeight">@dimen/battery_text_size</item>
+        <item name="android:lineHeight">@dimen/battery_text_size</item>
         <item name="android:textColor">@color/battery_device_primary_color</item>
+        <item name="android:fontFamily">nothingdot57</item>
     </style>
 </resources>

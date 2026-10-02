@@ -18,7 +18,7 @@
             android:id="@+id/countdown_days"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/nothingdot57"
+            android:fontFamily="nothingdot57"
             android:includeFontPadding="false"
             android:textColor="@color/battery_device_primary_color"
             android:textSize="52sp" />
@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:alpha="0.6"
-            android:fontFamily="@font/nothingdot57"
+            android:fontFamily="nothingdot57"
             android:includeFontPadding="false"
             android:paddingStart="6dp"
             android:paddingBottom="10dp"
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:ellipsize="end"
-        android:fontFamily="@font/nothingdot57"
+        android:fontFamily="nothingdot57"
         android:maxLines="2"
         android:textColor="@color/battery_device_primary_color"
         android:textSize="14sp" />
@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         android:alpha="0.5"
-        android:fontFamily="@font/nothingdot57"
+        android:fontFamily="nothingdot57"
         android:textColor="@color/battery_device_primary_color"
         android:textSize="11sp" />
 

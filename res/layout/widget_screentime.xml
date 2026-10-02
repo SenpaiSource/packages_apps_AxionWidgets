@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="32sp"
-            android:fontFamily="nothingdot"
+            android:fontFamily="nothingdot57"
             android:textColor="@color/battery_device_primary_color"
             android:includeFontPadding="false" />
 
@@ -44,7 +44,7 @@
             android:text="H"
             android:textSize="18sp"
             android:layout_marginEnd="4dp"
-            android:fontFamily="nothingdot"
+            android:fontFamily="nothingdot57"
             android:textColor="@color/battery_device_primary_color"
             android:includeFontPadding="false" />
 
@@ -53,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="32sp"
-            android:fontFamily="nothingdot"
+            android:fontFamily="nothingdot57"
             android:textColor="@color/battery_device_primary_color"
             android:includeFontPadding="false" />
 
@@ -64,7 +64,7 @@
             android:text="M"
             android:textSize="18sp"
             android:layout_marginStart="2dp"
-            android:fontFamily="nothingdot"
+            android:fontFamily="nothingdot57"
             android:textColor="@color/battery_device_primary_color"
             android:includeFontPadding="false" />
 

@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:format12Hour="hh:mm"
         android:format24Hour="HH:mm"
-        android:fontFamily="@font/nothingdot57"
+        android:fontFamily="nothingdot57"
         android:includeFontPadding="false"
         android:textColor="@color/battery_device_primary_color"
         android:textSize="48sp" />
@@ -28,7 +28,7 @@
         android:alpha="0.6"
         android:format12Hour="EEE, d MMM"
         android:format24Hour="EEE, d MMM"
-        android:fontFamily="@font/nothingdot57"
+        android:fontFamily="nothingdot57"
         android:includeFontPadding="false"
         android:textColor="@color/battery_device_primary_color"
         android:textSize="14sp" />
