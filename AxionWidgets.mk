@@ -13,5 +13,4 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     AxionWidgets \
-    privapp_whitelist_com.android.axionwidgets \
-    NothingWeather
+    privapp_whitelist_com.android.axionwidgets

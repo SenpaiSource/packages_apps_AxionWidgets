@@ -104,8 +104,10 @@ class WidgetUpdateService : Hilt_WidgetUpdateService() {
         super.onCreate()
 
         Process.setThreadPriority(Process.THREAD_PRIORITY_BACKGROUND)
-        Process.setThreadGroupAndCpuset(Process.myPid(), 9)
-        Process.setProcessGroup(Process.myPid(), 9)
+        // Cpuset group 9 (THREAD_GROUP_RESTRICTED) only exists on Nothing hardware.
+        // Wrap in runCatching to avoid crashing on other SoCs (e.g., Qualcomm SM8650).
+        runCatching { Process.setThreadGroupAndCpuset(Process.myPid(), Process.THREAD_GROUP_BACKGROUND) }
+        runCatching { Process.setProcessGroup(Process.myPid(), Process.THREAD_GROUP_BACKGROUND) }
 
         if (isRunning) {
             logger("WidgetUpdateService already running, skipping onCreate")
